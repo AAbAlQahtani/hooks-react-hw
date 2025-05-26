@@ -40,6 +40,14 @@ export default function Application() {
             });
             return
         }
+        if (!age) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Please enter your birth date',
+            });
+            return
+        }
         if (city == "") {
             Swal.fire({
                 icon: 'error',
